@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* ==============HEADER ================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+}
+.logo {
+    font-weight: bold;
+}
+.nav {
+    display: flex;
+    gap: 30px;
+}
+.nav a { 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ==================TOP SECTION=============== */
+.top-section {
+    background-color:  #ffbf69;
+    background-image: url("../img/background.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =======================HERO================== */
+.hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background: transparent;
+}
+.hero-text {
+    max-width: 500px;
+    color: white;
+}
+.hero-text h1 {
+    font-size: 120px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.hero-text p {
+    margin-bottom: 20px;
+}
+.hero-text button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #cbf3f0;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* ==================INFORMACION================= */
+.informacion {
+    text-align: center;
+    padding: 70px 250px;
+}
+/* ====================PRODUCTOS================== */
+.productos {
+    padding: 30px;
+    text-align: center;
+    background-color: #cbf3f0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+.producto img {
+    width: 200px;
+}
+.producto button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffbf69;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ========================RULES====================== */
+.rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+    background: url("../img/bg-grid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+.rules-image img{
+    max-width: 400px;
+    width: 100%;
+}
+.rules-text {
+    max-width: 500px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ======================RESPONSIVE===================== */
+@media (max-width: 768px) {
+    .top-section {
+        background-position: 70% center;
+    }
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    .nav a {
+        font-size: 15px;
+    }
+    .hero-text h1 {
+        font-size: 80px;
+    }
+    .hero {
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 45px 20px;
+    }
+}
