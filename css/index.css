@@ -148,7 +148,23 @@ body {
     .informacion {
         padding: 40px;
     }
+    .productos {
+        padding: 20px;
+    }
     .cards {
         grid-template-columns: 1fr;
+    }
+    .producto img {
+        margin-top: 20px;
+    }
+    .rules {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+        background-size: 90%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
